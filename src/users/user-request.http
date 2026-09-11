@@ -1,0 +1,12 @@
+### Variaveis de ambiente
+@baseUrl = http://localhost:3000
+
+
+### Create a new user
+POST {{baseUrl}}/auth/signup
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "password123"
+}

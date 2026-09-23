@@ -13,3 +13,7 @@ Content-Type: application/json
 
 ### Get a user by ID
 GET {{baseUrl}}/auth/1
+
+
+### Get all user by email
+GET {{baseUrl}}/auth?email=test@example.com

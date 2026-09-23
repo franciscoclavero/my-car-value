@@ -100,3 +100,8 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 # TODO
 
 Implementar filtro de exceções personalizada
+
+
+# Terminal codes
+
+Implementar filtro de exceções personalizada

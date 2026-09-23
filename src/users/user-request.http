@@ -10,3 +10,6 @@ Content-Type: application/json
   "email": "test@example.com",
   "password": "password123"
 }
+
+### Get a user by ID
+GET {{baseUrl}}/auth/1

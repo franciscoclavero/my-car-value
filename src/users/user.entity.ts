@@ -1,6 +1,6 @@
 import {
   AfterInsert,
-  AfterRemove,
+  BeforeRemove,
   AfterUpdate,
   Column,
   Entity,
@@ -28,7 +28,7 @@ export class User {
     console.log(`User with ID ${this.id} has been updated.`);
   }
 
-  @AfterRemove()
+  @BeforeRemove()
   logRemove() {
     console.log(`User with ID ${this.id} has been removed.`);
   }

@@ -17,3 +17,6 @@ GET {{baseUrl}}/auth/1
 
 ### Get all user by email
 GET {{baseUrl}}/auth?email=test@example.com
+
+### Delete user by id
+DELETE {{baseUrl}}/auth/1

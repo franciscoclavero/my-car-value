@@ -7,12 +7,12 @@ POST {{baseUrl}}/auth/signup
 Content-Type: application/json
 
 {
-  "email": "test@example.com",
+  "email": "update@example.com",
   "password": "password123"
 }
 
 ### Get a user by ID
-GET {{baseUrl}}/auth/1
+GET {{baseUrl}}/auth/3
 
 
 ### Get all user by email
@@ -20,3 +20,12 @@ GET {{baseUrl}}/auth?email=test@example.com
 
 ### Delete user by id
 DELETE {{baseUrl}}/auth/1
+
+### Update user
+PATCH {{baseUrl}}/auth/3
+Content-Type: application/json
+
+{
+  "email": "update-test@example.com",
+  "password": "new-password123"
+}

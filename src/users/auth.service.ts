@@ -15,7 +15,9 @@ export class AuthService {
 
     const passwordHash = await argon2.hash(password);
 
-    return this.usersService.create(email, passwordHash);
+    const user = await this.usersService.create(email, passwordHash);
+
+    return user;
   }
 
   signin() {}

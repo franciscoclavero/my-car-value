@@ -7,9 +7,19 @@ POST {{baseUrl}}/auth/signup
 Content-Type: application/json
 
 {
-  "email": "update@example.com",
+  "email": "using-hash@example.com",
   "password": "password123"
 }
+
+### Login
+POST {{baseUrl}}/auth/signin
+Content-Type: application/json
+
+{
+  "email": "using-hash@example.com",
+  "password": "password123"
+}
+
 
 ### Get a user by ID
 GET {{baseUrl}}/auth/3
